@@ -9,7 +9,6 @@ a {
     color: inherit;
 }
 a:hover {
-    /* text-decoration: underline; */
     font-weight: bold;
     color: crimson;
 }
@@ -18,9 +17,8 @@ hr {
     border: 1px solid;
 }
 
-/* パソコン用 */
+/* for laptop or desktop */
 @media screen and (min-width: 769px) {
-    /*ここに通常のCSSを入れる*/
     img#me {
         width: 270px;
         height: 270px;
@@ -36,12 +34,28 @@ hr {
     }
 }
 
-/* タブレット用 */
+/* for tablet */
 @media only screen and (min-width: 641px) and (max-width: 960px) {
-    /*ここに通常のCSSを入れる*/
+    #main {
+        margin: 0 5%;
+    }
+    img#me {
+        width: 230px;
+        height: 230px;        
+        margin: 10% auto;
+        border-radius: 5%;
+    }
+    div#links {
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    div#main > div#header > h1 {
+        font-size: 160%;
+        text-align: center;
+    }    
 }
     
-/* スマートフォン用 */
+/* for smartphone */
 @media screen and (max-width: 640px) {
     #main {
         margin: 0 5%;
@@ -60,5 +74,4 @@ hr {
         font-size: 160%;
         text-align: center;
     }
-
 }
