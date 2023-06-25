@@ -1,0 +1,64 @@
+body {
+    color: #222;
+    background-color: #F4F5F7;
+    font-family: noto sans jp,YuGothic,hiragino kaku gothic pron,sans-serif;
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    /* text-decoration: underline; */
+    font-weight: bold;
+    color: crimson;
+}
+
+hr {
+    border: 1px solid;
+}
+
+/* パソコン用 */
+@media screen and (min-width: 769px) {
+    /*ここに通常のCSSを入れる*/
+    img#me {
+        width: 270px;
+        height: 270px;
+        margin: 5% auto;
+        border-radius: 5%;
+    }
+    div#links {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    div#main > div#header > h1 {
+        text-align: center;
+    }
+}
+
+/* タブレット用 */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+    /*ここに通常のCSSを入れる*/
+}
+    
+/* スマートフォン用 */
+@media screen and (max-width: 640px) {
+    #main {
+        margin: 0 5%;
+    }
+    img#me {
+        width: 230px;
+        height: 230px;        
+        margin: 10% auto;
+        border-radius: 5%;
+    }
+    div#links {
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    div#main > div#header > h1 {
+        font-size: 160%;
+        text-align: center;
+    }
+
+}
