@@ -44,25 +44,26 @@ div#main > div#header > h1 {
         width: 230px;
         height: 230px;        
         margin: 10% auto;
-        border-radius: 5%;
     }
-    div#links {
-        text-align: center;
-        padding-bottom: 10%;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1366px) {
+    #main {
+        margin: 0 5%;
     }
-    div#main > div#header > h1 {
-        font-size: 160%;
-        text-align: center;
-    }    
+    img#me {
+        width: 270px;
+        height: 270px;        
+        margin: 5% auto;
+    }
 }
 
 /* for laptop or desktop */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1367px) {
     img#me {
         width: 270px;
         height: 270px;
         margin: 5% auto;
-        border-radius: 5%;
     }
     div#links {
         text-align: center;
