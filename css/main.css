@@ -4,13 +4,22 @@ body {
     font-family: noto sans jp,YuGothic,hiragino kaku gothic pron,sans-serif;
     line-height: 1.5em;
 }
+
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: underline;
 }
-a:hover {
+
+#links > a {
+    text-decoration: none;
+}
+
+a:hover:not(#links > a) {
     font-weight: bold;
     color: crimson;
+}
+
+a:visited {
+    color: inherit;
 }
 
 hr {
@@ -20,20 +29,29 @@ hr {
 #main {
     margin: 0 5%;
 }
+
 img#me {
     width: 230px;
     height: 230px;        
     margin: 10% auto;
     border-radius: 5%;
 }
+
 div#links {
     text-align: center;
     padding-bottom: 10%;
 }
+
 div#main > div#header > h1 {
     font-size: 160%;
     text-align: center;
 }
+
+div#footer {
+    text-align: center;
+    padding-top: 5%;
+}
+
 
 /* for tablet */
 @media only screen and (min-width: 640px) {
