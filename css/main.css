@@ -7,6 +7,7 @@ body {
 
 a {
     text-decoration: underline;
+    color: #222;
 }
 
 #links > a {
@@ -19,7 +20,7 @@ a:hover:not(#links > a) {
 }
 
 a:visited {
-    color: inherit;
+    color: #222;
 }
 
 hr {
